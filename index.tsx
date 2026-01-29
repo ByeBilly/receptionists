@@ -144,6 +144,7 @@ const App = () => {
               <a href="#leak-math" className="text-white hover:text-orange-600 font-bold transition-colors">Leak Math</a>
               <a href="#how" className="text-white hover:text-orange-600 font-bold transition-colors">How It Works</a>
               <a href="#pricing" className="text-white hover:text-orange-600 font-bold transition-colors">Plans</a>
+              <a href="tel:0468055668" className="text-white hover:text-orange-600 font-bold transition-colors">Call 0468 055 668</a>
               <a href="#contact" className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-black uppercase text-sm transition-all transform hover:scale-105">
                 Start Now $115
               </a>
@@ -159,6 +160,7 @@ const App = () => {
               <a href="#leak-math" className="block text-white hover:text-orange-600 font-bold">Leak Math</a>
               <a href="#how" className="block text-white hover:text-orange-600 font-bold">How It Works</a>
               <a href="#pricing" className="block text-white hover:text-orange-600 font-bold">Plans</a>
+              <a href="tel:0468055668" className="block text-white hover:text-orange-600 font-bold">📞 Call Now</a>
               <a href="#contact" className="block bg-orange-600 text-white px-6 py-3 rounded-full font-black uppercase text-sm text-center">
                 Start Now $115
               </a>
@@ -325,6 +327,56 @@ const App = () => {
                 <p className="text-slate-600 font-medium">{step.desc}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Access Section */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl sm:text-5xl font-black uppercase italic text-slate-950 mb-6">
+              Founder <span className="text-orange-600">Access</span>
+            </h2>
+            <p className="text-slate-500 font-bold tracking-widest uppercase text-sm mb-6">(Pre-Launch Phase)</p>
+            <p className="text-xl text-slate-600 font-medium leading-relaxed max-w-2xl mx-auto">
+              We’re opening early access to a limited group of businesses before public launch. This phase allows us to validate real usage while offering early adopters access to founder-level pricing.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl border-4 border-slate-200 p-8 sm:p-12 shadow-lg mb-10">
+            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+              {[
+                'Speak directly with our AI receptionist',
+                'Confirm suitability for your business',
+                'Secure founder-level pricing while active',
+                'No obligation to proceed beyond this step'
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-start gap-3">
+                  <CheckCircle2 className="text-orange-600 flex-shrink-0 mt-1" size={20} strokeWidth={3} />
+                  <p className="text-slate-700 font-bold">{item}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 mb-8">
+              <div className="flex items-start gap-3">
+                <AlertTriangle className="text-slate-400 flex-shrink-0 mt-0.5" size={18} />
+                <div className="text-sm text-slate-500 font-medium space-y-1">
+                  <p>Founder pricing remains active only while the subscription stays active.</p>
+                  <p>Features and rollout occur progressively during launch.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a href="tel:0468055668" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-full font-black uppercase text-lg transition-all transform hover:scale-105 flex items-center gap-2">
+                <Phone size={24} /> Call to Check Founder Access
+              </a>
+              <a href="#contact" className="text-slate-500 hover:text-orange-600 font-bold underline decoration-2 underline-offset-4 transition-colors">
+                Prefer email? Contact us
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -534,6 +586,7 @@ const App = () => {
               <h4 className="font-black uppercase text-sm mb-4 text-orange-600">Contact</h4>
               <div className="space-y-2 text-slate-400 font-medium">
                 <p>info@receptionists.net.au</p>
+                <a href="tel:0468055668" className="block hover:text-orange-600 transition-colors">0468 055 668</a>
                 <p>ABN: 15968402186</p>
                 <p>Coombabah, QLD 4216</p>
               </div>
